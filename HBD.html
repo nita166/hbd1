@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Birthday Surprise</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="login">
+<h2>Masukkan Sandi 🔐</h2>
+
+<input type="password" id="password" placeholder="Masukkan sandi">
+<br><br>
+
+<button onclick="cekPassword()">Masuk</button>
+
+<p id="error" style="color:red;"></p>
+</div>
+
+
+<div id="birthday">
+
+<h1> HBD Abang </h1>
+
+<img src="maaf.jpeg" alt="Memohon Maaf">
+
+<h2>Adek minta maaf, adek tau abang hari ini bertambah usia.
+    Tapi adek punya cara sendiri buat ungkapin gimana adek sayang abang.
+    Maaf kalau hari ini mood abang jadi kurang nyaman.
+    Oiya, nanti tunggu waktunya ya, adek benar-benar akan ungkapin semuanya.</h2>
+
+<p>
+<b>ILYSM Bang❤️.</b>
+</p>
+
+</div>
+
+
+<script>
+
+function cekPassword(){
+
+let sandi = document.getElementById("password").value;
+let benar = "17-02-2026";  
+
+if(sandi === benar){
+
+document.getElementById("login").style.display = "none";
+document.getElementById("birthday").style.display = "block";
+
+}
+
+else{
+
+document.getElementById("error").innerHTML = "Sandi salah! coba lagi.";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
